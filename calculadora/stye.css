@@ -1,0 +1,39 @@
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.calculadora{
+width:320px;
+margin:100px auto;
+padding:20px;
+background:rgb(117, 117, 230);
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:rgb(63, 63, 145);
+font-weight:bold;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:rgb(46, 46, 109);
+}
+
+.resultado{
+margin-top:20px;
+font-weight:bold;
+}

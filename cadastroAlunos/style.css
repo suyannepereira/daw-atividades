@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container geral */
+.container {
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Espaçamento entre elementos do form */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"] {
+    margin-bottom: 15px;
+}
+
+/* Botão voltar */
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #aaa;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: #888;
+}
+
+/* Botão */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Mensagem */
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}

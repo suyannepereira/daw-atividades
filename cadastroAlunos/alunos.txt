@@ -1,0 +1,6 @@
+1;Marcus;marcus@gmail.com
+4;Caio;caiosilva1@gmail.com
+6;Cris;crisbarbosa197@gmail.com
+2;Sarah;sarinha08@gmail.com
+3;Rita;perezrita@gmail.com
+9;Simone;sdias@gmail.com
