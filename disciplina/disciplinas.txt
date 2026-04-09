@@ -1,0 +1,2 @@
+DAW;Desenvolvimento Web;60
+ORG;Organização de Computadores;80
