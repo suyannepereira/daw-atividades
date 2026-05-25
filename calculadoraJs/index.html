@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function calcular() {
+
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    let operador = document.getElementById("operador").value;
+
+    let resultado = "";
+    let erro = "";
+
+    if (operador == "soma") {
+        resultado = a + b;
+    }
+
+    else if (operador == "sub") {
+        resultado = a - b;
+    }
+
+    else if (operador == "multi") {
+        resultado = a * b;
+    }
+
+    else if (operador == "divide") {
+
+        if (b == 0) {
+            erro = "Nao e possível dividir por zero";
+        } else {
+            resultado = a / b;
+        }
+
+    }
+
+    else if (operador == "potencia") {
+        resultado = Math.pow(a, b);
+    }
+
+    else if (operador == "raiz") {
+
+        if (b == 0) {
+            erro = "indice da raiz nao pode ser zero";
+        } else {
+            resultado = Math.pow(a, 1 / b);
+        }
+
+    }
+
+    let divResultado = document.getElementById("resultado");
+
+    if (erro != "") {
+        divResultado.innerHTML = erro;
+    } else {
+        divResultado.innerHTML = "Resultado: " + resultado;
+    }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="calculadora">
+
+<h1>Minha Calculadora</h1>
+
+<label>Digite o primeiro operador:</label>
+<input type="text" id="a">
+
+<label>Digite o segundo operador:</label>
+<input type="text" id="b">
+
+<label>Escolha a operação matemática:</label>
+
+<select id="operador">
+
+<option value="soma">Adição</option>
+<option value="sub">Subtração</option>
+<option value="multi">Multiplicação</option>
+<option value="divide">Divisão</option>
+<option value="potencia">Potência</option>
+<option value="raiz">Radiciação</option>
+
+</select>
+
+<button onclick="calcular()">Calcular</button>
+
+<div class="resultado" id="resultado">
+
+</div>
+
+</div>
+
+</body>
+</html>
