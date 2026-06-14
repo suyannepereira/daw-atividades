@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Editar Pergunta</title>
+</head>
+<body>
+
+<h2>Editar Pergunta</h2>
+
+<form id="formEditar">
+
+    <input type="hidden" id="id">
+
+    <label>Pergunta:</label><br>
+    <textarea id="pergunta" rows="5" cols="50"></textarea>
+    <br><br>
+
+    <label>Tipo:</label><br>
+
+    <input type="radio" name="tipo" value="multipla">
+    Múltipla
+
+    <input type="radio" name="tipo" value="texto">
+    Texto
+
+    <br><br>
+
+    <label>Alternativa A:</label><br>
+    <input type="text" id="alt1"><br><br>
+
+    <label>Alternativa B:</label><br>
+    <input type="text" id="alt2"><br><br>
+
+    <label>Alternativa C:</label><br>
+    <input type="text" id="alt3"><br><br>
+
+    <label>Alternativa D:</label><br>
+    <input type="text" id="alt4"><br><br>
+
+    <label>Alternativa E:</label><br>
+    <input type="text" id="alt5"><br><br>
+
+    <button type="submit">
+        Salvar Alterações
+    </button>
+
+</form>
+
+<script src="editar_pergunta.js"></script>
+
+</body>
+</html>
